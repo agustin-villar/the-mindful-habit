@@ -1,16 +1,18 @@
 {
-  "name": "learn-rollup",
+  "name": "job-apply",
   "version": "0.0.0",
   "description": "This is an example project to accompany a tutorial on using Rollup.",
   "main": "build/js/main.min.js",
   "scripts": {
     "dev": "rollup -c --watch",
-    "reload": "livereload 'build/'",
-    "watch": "npm-run-all --parallel dev reload"
+    "reload" : "livereload 'build/'",
+    "watch": "npm-run-all --parallel reload dev"
   },
   "author": "Agustín Villar",
   "devDependencies": {
     "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.0.1",
     "livereload": "^0.6.2",
     "npm-run-all": "^4.0.2",
     "rollup": "^0.41.6",
@@ -21,6 +23,5 @@
     "rollup-plugin-uglify": "^2.0.0",
     "rollup-watch": "^3.2.2"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

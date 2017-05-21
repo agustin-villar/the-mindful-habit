@@ -6,13 +6,13 @@ import uglify from 'rollup-plugin-uglify';
 import scss from 'rollup-plugin-scss';
 
 export default {
-  entry: 'src/scripts/main.js',
+  entry: 'src/js/main.js',
   dest: 'build/js/main.min.js',
   format: 'iife',
   sourceMap: 'inline',
   plugins: [
     scss({
-      input: 'src/styles/**',
+      input: 'src/scss/**',
       output: true,
       output: 'build/css/styles.css'
     }),
