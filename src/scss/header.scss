@@ -1,0 +1,77 @@
+header {
+  align-items: center;
+  background: $black;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  text-transform: uppercase;
+
+  .logo {
+    @include font('Fira Sans Extra Condensed');
+
+    color: $white;
+    font-size: 29px;
+    font-weight: 600;
+    margin-left: 45px;
+    vertical-align: top;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.menu {
+  vertical-align: middle;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    color: $white;
+    font-weight: 600;
+    margin: 0 20px;
+
+    &.active,
+    &:hover,
+    &:active,
+    &:focus {
+      border-bottom: 1px solid $white;
+    }
+  }
+}
+
+.search {
+  input {
+    font-weight: 600;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    width: 255px;
+  }
+
+  button {
+    @include icon('search');
+
+    background: transparent;
+    border: 0;
+    color: $medium-gray;
+    display: inline-block;
+    font-size: 14px;
+    transform: translateX(-100%);
+    vertical-align: middle;
+  }
+}
+
+.cart-status {
+  @include icon('briefcase');
+
+  color: $white;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 45px;
+
+  &:before {
+    margin-right: 6px;
+  }
+}

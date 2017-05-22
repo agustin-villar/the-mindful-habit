@@ -1,4 +1,117 @@
 body {
+  @include font();
+
   background: $background-gray;
-  font-family: Arial;
+  color: $medium-gray;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  line-height: 150%;
+}
+
+h1,
+h2 {
+  @include font('Fira Sans Extra Condensed');
+
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: $black;
+  font-size: 32px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  border: 0;
+  border-radius: 0;
+}
+
+.cont {
+  margin: 0 auto;
+  padding: 0 $gutter;
+  width: $content-width-desktop;
+}
+
+.custom-button {
+  background: $blue;
+  border: 0;
+  color: $white;
+  display: inline-block;
+  font-weight: 600;
+  min-width: 130px;
+  padding: 9px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease-in;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $dark-blue;
+  }
+}
+
+.social-icon {
+  &.twitter {
+    @include icon('twitter');
+  }
+
+  &.facebook {
+    @include icon('facebook');
+  }
+
+  &.linkedin {
+    @include icon('linkedin');
+  }
+
+  &.googleplus {
+    @include icon('googleplus');
+  }
+
+  &.mail {
+    @include icon('mail');
+  }
+
+  &.printer {
+    @include icon('printer');
+  }
+
+  &.instagram {
+    @include icon('instagram');
+  }
+
+  &.youtube {
+    @include icon('youtube');
+  }
+
+  &.tumblr {
+    @include icon('tumblr');
+  }
+}
+
+.white-section {
+  background: $white;
+  padding: 35px 0;
+}
+
+.classic-list {
+  li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
 }

@@ -1,0 +1,80 @@
+@mixin font($font-family: 'Source Sans Pro') {
+  font-family: $font-family, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+}
+
+//Icons
+@mixin icon($icon, $after: false) {
+  $el: 'before';
+
+  @if $after {
+    $el: 'after';
+  }
+
+  &:#{$el} {
+    display: inline-block;
+    font-family: 'IcoMoon-Free';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+
+    @if $icon == 'search' {
+      content: '\e986';
+    }
+
+    @if $icon == 'briefcase' {
+      content: '\e9ae';
+    }
+
+    @if $icon == 'twitter' {
+      content: '\ea96';
+    }
+
+    @if $icon == 'facebook' {
+      content: '\ea90';
+    }
+
+    @if $icon == 'linkedin' {
+      content: '\eaca';
+    }
+
+    @if $icon == 'googleplus' {
+      content: '\ea8b';
+    }
+
+    @if $icon == 'mail' {
+      content: '\e945';
+    }
+
+    @if $icon == 'printer' {
+      content: '\e954';
+    }
+
+    @if $icon == 'instagram' {
+      content: '\ea92';
+    }
+
+    @if $icon == 'youtube' {
+      content: '\ea9d';
+    }
+
+    @if $icon == 'tumblr' {
+      content: '\eab9';
+    }
+
+    @if $icon == 'dropbox' {
+      content: '\eaae';
+    }
+
+    @if $icon == 'computer' {
+      content: '\e956';
+    }
+  }
+}

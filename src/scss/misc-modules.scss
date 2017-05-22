@@ -1,0 +1,125 @@
+.related-jobs {
+  padding-bottom: 50px;
+
+  h4 {
+    border-bottom: 1px solid $border-gray;
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    text-align: center;
+    width: 50%;
+  }
+
+  a {
+    @include font('Fira Sans Extra Condensed');
+
+    color: $black;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    span {
+      @include font();
+
+      color: $medium-gray;
+      display: block;
+      font-size: 14px;
+      text-transform: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      span{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.photo-section {
+  background: url('../img/blue-fabric.jpg') center;
+  background-size: cover;
+  padding: 60px 0;
+}
+
+.photo-section-frame {
+  background: $background-gray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px $gutter $gutter;
+
+  article {
+    box-sizing: border-box;
+    margin-bottom: 30px;
+    padding-right: #{$gutter} / 2;
+    vertical-align: top;
+    width: 50%;
+
+    &:nth-child(even) {
+      padding-left: #{$gutter} / 2;
+      padding-right: 0;
+    }
+  }
+
+  a {
+    color: $medium-gray;
+
+    &.keep-reading {
+      color: $light-gray;
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $dark-gray;
+      }
+    }
+  }
+}
+
+.photo-section-composed {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: calc(#{$content-width-desktop} + (#{$gutter} * 2));
+}
+
+.half-frame {
+  background: $background-gray;
+  box-sizing: border-box;
+  padding: 20px $gutter $gutter;
+  width: 50%;
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  &.transparent {
+    background: transparent;
+    padding: 0 0 0 $gutter;
+  }
+
+  &:nth-child(even) {
+    margin-left: 0;
+  }
+}
+
+.keep-reading {
+  color: $light-gray;
+  text-decoration: none;
+  transition: color 0.2s ease-out;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $dark-gray;
+  }
+}
