@@ -1,6 +1,38 @@
 footer {
   background: $white;
   padding-top: 30px;
+  position: relative;
+}
+
+.back-to-top {
+  @include icon('topfacingcaret', true);
+
+  background: $white;
+  box-sizing: border-box;
+  color: $medium-gray;
+  display: inline-block;
+  font-size: 12px;
+  min-width: 130px;
+  position: absolute;
+  padding: 13px 13px 9px;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  transform: translateY(-100%);
+  transition: color 0.3s ease-out;
+
+  &:after {
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $dark-gray;
+  }
 }
 
 .footer-nav {
@@ -79,4 +111,40 @@ footer {
   background: $background-gray;
   color: $light-gray;
   padding: 20px 0;
+}
+
+@include at-breakpoint($mobile-screen) {
+  .back-to-top {
+    font-size: 0;
+    min-width: 0;
+    padding: 11px 13px;
+
+    &:after {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  .footer-nav {
+    padding-bottom: 0;
+  }
+
+  .footer-nav > ul > li {
+    display: none;
+  }
+
+  .footer-nav ul li.social-links-footer,
+  .footer-nav ul li.newsletter-footer {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+
+  .newsletter-footer {
+    label,
+    input {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
 }

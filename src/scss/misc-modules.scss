@@ -123,3 +123,75 @@
     color: $dark-gray;
   }
 }
+
+.tabbed-content {
+  display: none;
+
+  &.active-tab {
+    display: block;
+  }
+}
+
+@include at-breakpoint($mobile-screen) {
+  .related-jobs {
+    padding: 0;
+    text-align: center;
+
+    .cont {
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+    h4,
+    li {
+      margin-bottom: 0;
+      padding: 15px $mobile-gutter;
+    }
+
+    h4 {
+      border-top: 1px solid $border-gray;
+      font-size: 14px;
+    }
+
+    ul {
+      flex-wrap: wrap;
+    }
+
+    li {
+      border-bottom: 1px solid $border-gray;
+      width: 100%;
+    }
+  }
+
+  .photo-section-frame {
+    box-sizing: border-box;
+    width: calc(100% - (#{$mobile-gutter} * 2));
+
+    article {
+      width: 100%;
+    }
+  }
+
+  .photo-section {
+    padding: 45px 0;
+  }
+
+  .photo-section-composed {
+    flex-wrap: wrap;
+    width: calc(100% - (#{$mobile-gutter} * 2));
+  }
+
+  .half-frame {
+    margin-bottom: 30px;
+    width: 100%;
+
+    &.transparent {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

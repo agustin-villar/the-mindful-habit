@@ -142,3 +142,54 @@
     color: $medium-gray;
   }
 }
+
+@include at-breakpoint($mobile-screen) {
+  .application-form input[type="text"],
+  .application-form select,
+  .application-form textarea {
+    margin-bottom: 14px;
+    width: 100%;
+  }
+
+  .two-column-fieldset {
+    margin-bottom: 0;
+
+    fieldset {
+      width: 100%;
+    }
+  }
+
+  .file-field-combo {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    label {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+  .bottom-form {
+    flex-wrap: wrap;
+  }
+
+  .back-link {
+    order: 1;
+  }
+
+  .bottom-form-right {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    width: 100%;
+
+    label {
+      text-align: left;
+    }
+
+    input[type=submit] {
+      width: 50%;
+    }
+  }
+}

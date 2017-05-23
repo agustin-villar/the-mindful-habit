@@ -5,6 +5,12 @@
   font-weight: normal;
 }
 
+@mixin at-breakpoint($viewport) {
+  @media print, screen and (max-width: $viewport) {
+    @content;
+  }
+}
+
 //Icons
 @mixin icon($icon, $after: false) {
   $el: 'before';
@@ -15,7 +21,7 @@
 
   &:#{$el} {
     display: inline-block;
-    font-family: 'IcoMoon-Free';
+    font-family: 'icomoon';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
@@ -75,6 +81,10 @@
 
     @if $icon == 'computer' {
       content: '\e956';
+    }
+
+    @if $icon == 'topfacingcaret' {
+      content: '\ea1d'
     }
   }
 }

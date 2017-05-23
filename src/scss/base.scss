@@ -115,3 +115,19 @@ textarea {
     margin-left: 20px;
   }
 }
+
+@include at-breakpoint($mobile-screen) {
+  h1,
+  h2 {
+    line-height: 120%;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .cont {
+    padding: 0;
+    width: calc(100% - (#{$mobile-gutter} * 2));
+  }
+}
