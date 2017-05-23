@@ -1,15 +1,15 @@
 {
   "name": "job-apply",
   "version": "0.0.0",
-  "description": "This is an example project to accompany a tutorial on using Rollup.",
   "main": "build/js/main.min.js",
   "scripts": {
     "dev": "rollup -c --watch",
-    "reload" : "livereload 'build/'",
+    "reload": "livereload 'build/'",
     "watch": "npm-run-all --parallel reload dev"
   },
   "author": "Agustín Villar",
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "babel-preset-es2015-rollup": "^3.0.0",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^7.0.1",

@@ -5,28 +5,62 @@
     margin-bottom: 30px;
   }
 
-  fieldset {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-
   legend {
     color: $black;
     font-weight: 600;
     margin-bottom: 15px;
+    width: 100%;
   }
 
   input[type=text],
+  input[type=date],
   select,
   textarea {
+    background: $white;
     box-sizing: border-box;
     color: $dark-blue;
     margin-bottom: 18px;
     padding: 12px;
+    padding-right: 34px;
     width: 48%;
+
+    &.js_wrong-field {
+      border: 1px solid $red;
+      color: $red;
+      padding: 11px;
+    }
+
+    &.js_right-field {
+      background-image: url(../img/checkmark.svg);
+      background-position: calc(100% - 10px) center;
+      background-repeat: no-repeat;
+      background-size: 14px;
+    }
   }
+
+  input[type=file] {
+    &.js_wrong-field {
+      background: $red;
+    }
+  }
+
+  textarea {
+    &.js_right-field {
+      background-position: calc(100% - 10px) 15px;
+    }
+  }
+
+  select {
+    height: 44px;
+  }
+}
+
+.fieldset {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .two-column-fieldset {
@@ -35,11 +69,12 @@
   justify-content: space-between;
   margin-bottom: 55px;
 
-  fieldset {
+  .fieldset {
     width: 48%;
   }
 
   textarea {
+    height: 120px;
     width: 100%;
   }
 }
@@ -143,8 +178,41 @@
   }
 }
 
+.overlay {
+  background: rgba(255,255,255,0.9);
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .overlay-content {
+    background: $white;
+    border: 1px solid $border-gray;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    left: 50%;
+    padding: 30px;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &.js_visible {
+    display: block;
+  }
+}
+
 @include at-breakpoint($mobile-screen) {
-  .application-form input[type="text"],
+  .application-form input[type=text],
+  .application-form input[type=date],
   .application-form select,
   .application-form textarea {
     margin-bottom: 14px;
@@ -154,7 +222,7 @@
   .two-column-fieldset {
     margin-bottom: 0;
 
-    fieldset {
+    .fieldset {
       width: 100%;
     }
   }
@@ -190,6 +258,18 @@
 
     input[type=submit] {
       width: 50%;
+    }
+  }
+
+  .overlay-content {
+    width: calc(100% - (#{$gutter} * 2));
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
     }
   }
 }

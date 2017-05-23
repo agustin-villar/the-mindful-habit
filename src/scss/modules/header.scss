@@ -149,6 +149,12 @@ header {
 }
 
 @include at-breakpoint($mobile-screen) {
+  body {
+    &.js_on-menu-open {
+      overflow: hidden;
+    }
+  }
+
   header {
     flex-wrap: wrap;
     height: 100px;
@@ -187,17 +193,19 @@ header {
     }
 
     a {
-      color: $black;
+      color: $medium-gray;
       display: block;
       font-size: 16px;
       text-align: center;
-      transition: font-size 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      transition-property: color, font-size;
 
       &:hover,
       &:active,
       &:focus,
       &.active {
         border: 0;
+        color: $black;
         font-size: 19px;
       }
     }
