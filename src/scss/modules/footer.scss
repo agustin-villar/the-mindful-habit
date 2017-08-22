@@ -101,9 +101,11 @@ footer {
 
 .newsletter-form {
   input {
+    box-sizing: border-box;
     border: 1px solid $border-gray;
     color: $medium-gray;
     padding: 8px;
+    width: 100%;
   }
 }
 
@@ -127,10 +129,14 @@ footer {
 
   .footer-nav {
     padding-bottom: 0;
-  }
 
-  .footer-nav > ul > li {
-    display: none;
+    > ul > li {
+      display: none;
+    }
+
+    ul > li a {
+      margin-bottom: 5px;
+    }
   }
 
   .footer-nav ul li.social-links-footer,

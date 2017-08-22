@@ -44,6 +44,10 @@ textarea {
   font-size: 14px;
 }
 
+input[type=file] {
+  cursor: pointer;
+}
+
 .cont {
   margin: 0 auto;
   padding: 0 $gutter;
@@ -54,6 +58,7 @@ textarea {
   background: $blue;
   border: 0;
   color: $white;
+  cursor: pointer;
   display: inline-block;
   font-weight: 600;
   min-width: 130px;

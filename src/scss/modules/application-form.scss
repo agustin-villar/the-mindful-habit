@@ -67,7 +67,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 30px;
 
   .fieldset {
     width: 48%;
@@ -87,32 +87,38 @@
   width: 100%;
 
   .custom-button {
+    box-sizing: border-box;
+
     &.dropbox {
       @include icon('dropbox');
 
-      padding: 7px;
-
       &:before {
-        font-size: 22px;
+        font-size: 19px;
         margin-right: 9px;
         vertical-align: middle;
+      }
+
+      &[disabled] {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.5;
       }
     }
   }
 
   .file-field-wrap {
-    min-width: 150px;
     position: relative;
 
     span.custom-button {
       @include icon('computer');
 
       left: 0;
-      padding: 10px;
       position: absolute;
       top: 0;
+      width: 100%;
 
       &:before {
+        font-size: 19px;
         margin-right: 9px;
         vertical-align: middle;
       }
@@ -125,14 +131,14 @@
 
   div,
   button {
-    width: 30%;
+    width: 38%;
   }
 
   input {
-    box-sizing: border-box;
+    height: 37px;
     margin-bottom: 0;
     opacity: 0;
-    padding: 9px;
+    padding: 0;
     width: 100%;
   }
 
@@ -147,18 +153,9 @@
   justify-content: space-between;
 }
 
-.bottom-form-right {
-  text-align: right;
-  width: 60%;
-
-  input[type=submit] {
-    padding: 12px;
-    width: 61%;
-  }
-
-  label {
-    margin-right: 20px;
-  }
+input[type=submit] {
+  padding: 12px;
+  width: 200px;
 }
 
 .back-link {
@@ -211,12 +208,22 @@
 }
 
 @include at-breakpoint($mobile-screen) {
-  .application-form input[type=text],
-  .application-form input[type=date],
-  .application-form select,
-  .application-form textarea {
-    margin-bottom: 14px;
-    width: 100%;
+  .application-form {
+    h2 {
+      @include font();
+
+      font-size: 20px;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    input[type=text],
+    input[type=date],
+    select,
+    textarea {
+      margin-bottom: 14px;
+      width: 100%;
+    }
   }
 
   .two-column-fieldset {
@@ -235,6 +242,11 @@
       margin-bottom: 10px;
       width: 100%;
     }
+
+    div,
+    button {
+      width: 48%;
+    }
   }
 
   .bottom-form {
@@ -245,20 +257,9 @@
     order: 1;
   }
 
-  .bottom-form-right {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+  input[type=submit] {
+    margin-bottom: 30px;
     width: 100%;
-
-    label {
-      text-align: left;
-    }
-
-    input[type=submit] {
-      width: 50%;
-    }
   }
 
   .overlay-content {
