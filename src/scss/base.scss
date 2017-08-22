@@ -1,8 +1,6 @@
 body {
   @include font();
 
-  background: $background-gray;
-  color: $medium-gray;
   font-size: 14px;
 }
 
@@ -17,7 +15,7 @@ li {
 
 h1,
 h2 {
-  @include font('Fira Sans Extra Condensed');
+  @include font('Roboto Condensed');
 
   font-weight: 600;
   text-transform: uppercase;
@@ -52,27 +50,6 @@ input[type=file] {
   margin: 0 auto;
   padding: 0 $gutter;
   width: $content-width-desktop;
-}
-
-.custom-button {
-  background: $blue;
-  border: 0;
-  color: $white;
-  cursor: pointer;
-  display: inline-block;
-  font-weight: 600;
-  min-width: 130px;
-  padding: 9px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease-in;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background: $dark-blue;
-  }
 }
 
 .social-icon {
@@ -110,33 +87,5 @@ input[type=file] {
 
   &.tumblr {
     @include icon('tumblr');
-  }
-}
-
-.white-section {
-  background: $white;
-  padding: 35px 0;
-}
-
-.classic-list {
-  li {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-}
-
-@include at-breakpoint($mobile-screen) {
-  h1,
-  h2 {
-    line-height: 120%;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  .cont {
-    padding: 0;
-    width: calc(100% - (#{$mobile-gutter} * 2));
   }
 }

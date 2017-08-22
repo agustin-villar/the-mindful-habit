@@ -1,0 +1,49 @@
+.tmh-header {
+  background: $blackBg;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+
+  &__logo {
+    @include font('Roboto Condensed');
+
+    color: $white;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 23px 0 0 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:before {
+      background: url(../img/the-mindful-habit-logo.svg);
+      content: '';
+      display: inline-block;
+      height: 23px;
+      margin: 0 5px 0 0;
+      vertical-align: bottom;
+      width: 22px;
+    }
+
+    span {
+      color: $red;
+    }
+  }
+
+  &__menu {
+    margin: 24px 40px 0 0;
+
+    li {
+      display: inline;
+      margin-left: 45px;
+    }
+
+    a {
+      @include font('Roboto Condensed');
+
+      color: $white;
+      font-size: 18px;
+      text-decoration: none;
+    }
+  }
+}
