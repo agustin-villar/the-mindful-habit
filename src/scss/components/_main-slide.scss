@@ -1,0 +1,37 @@
+.tmh-main-slide {
+  background: $light-grey;
+  height: 597px;
+
+  &__book {
+    background: url('../img/workbook.png') -150px 0;
+    background-size: 860px 549px;
+    height: 550px;
+    margin-top: 40px;
+    width: 500px;
+  }
+
+  &__text-box {
+    margin-top: 80px;
+    width: 700px;
+
+    h2 {
+      color: $red;
+      font-family: 'Roboto condensed';
+      font-weight: 700;
+      margin-bottom: 32px;
+      text-transform: uppercase;
+
+      span {
+        text-transform: none;
+      }
+    }
+
+    p {
+      color: $main-text-color;
+      font-family: 'Roboto condensed';
+      font-size: 26px;
+      font-weight: 300;
+      margin-bottom: 55px;
+    }
+  }
+}

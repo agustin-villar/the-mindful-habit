@@ -1,5 +1,5 @@
 .tmh-header {
-  background: $blackBg;
+  background: $black-bg;
   display: flex;
   height: 70px;
   justify-content: space-between;
@@ -11,6 +11,7 @@
     display: inline-block;
     font-size: 26px;
     font-weight: 700;
+    line-height: 100%;
     margin: 23px 0 0 40px;
     text-decoration: none;
     text-transform: uppercase;
@@ -20,8 +21,8 @@
       content: '';
       display: inline-block;
       height: 23px;
-      margin: 0 5px 0 0;
-      vertical-align: bottom;
+      margin: 1px 5px 0 0;
+      vertical-align: top;
       width: 22px;
     }
 
@@ -44,6 +45,10 @@
       color: $white;
       font-size: 18px;
       text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
