@@ -15,16 +15,23 @@ li {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
   @include font('Roboto Condensed');
 
   font-weight: 600;
+  letter-spacing: -0.3px;
   text-transform: uppercase;
 }
 
 h2 {
   color: $black;
-  font-size: 32px;
+  font-size: 44px;
+}
+
+h3 {
+  text-transform: none;
 }
 
 button {

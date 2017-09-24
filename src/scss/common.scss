@@ -25,4 +25,30 @@
   margin: 0 auto;
   max-width: $content-width-desktop;
   width: 100%;
+
+  &--wrapped {
+    flex-wrap: wrap;
+  }
+
+  h2,
+  h4,
+  p {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.tmh-section {
+  padding: 50px 0 65px;
+
+  &--dark-bg {
+    background: $main-text-color;
+
+    h2,
+    h3,
+    h4,
+    p {
+      color: $white;
+    }
+  }
 }

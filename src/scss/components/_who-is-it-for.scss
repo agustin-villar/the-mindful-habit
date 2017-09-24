@@ -1,0 +1,28 @@
+.tmh-who-is-it-for {
+  padding: 50px 0 65px;
+
+  h2,
+  p {
+    color: $red;
+    margin-bottom: 30px;
+  }
+
+  p,
+  ul {
+    color: $main-text-color;
+    font-size: 18px;
+    list-style: disc;
+  }
+
+  li {
+    line-height: 175%;
+  }
+
+  &__list-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+  }
+}
