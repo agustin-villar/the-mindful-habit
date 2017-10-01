@@ -1,0 +1,544 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?7v2wmi");
+  src: url("../fonts/icomoon.eot?7v2wmi#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?7v2wmi") format("truetype"), url("../fonts/icomoon.woff?7v2wmi") format("woff"), url("../fonts/icomoon.svg?7v2wmi#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  color: #383838;
+  font-size: 14px; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  line-height: 150%; }
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  text-transform: uppercase; }
+
+h2 {
+  color: #000;
+  font-size: 44px; }
+
+h3 {
+  text-transform: none; }
+
+b {
+  font-weight: 700; }
+
+i {
+  font-style: italic; }
+
+button {
+  background: transparent;
+  border: 0;
+  cursor: pointer; }
+
+input,
+select,
+textarea {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: normal;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px; }
+
+input[type=file] {
+  cursor: pointer; }
+
+.cont {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 1200px; }
+
+.social-icon.twitter:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\ea96'; }
+
+.social-icon.facebook:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\ea90'; }
+
+.social-icon.linkedin:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\eaca'; }
+
+.social-icon.googleplus:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\ea8b'; }
+
+.social-icon.mail:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\e945'; }
+
+.social-icon.printer:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\e954'; }
+
+.social-icon.instagram:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\ea92'; }
+
+.social-icon.youtube:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\ea9d'; }
+
+.social-icon.tumblr:before {
+  display: inline-block;
+  font-family: 'icomoon';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+  content: '\eab9'; }
+
+.tmh-button {
+  background: #F60000;
+  border-radius: 5px;
+  color: #FFF;
+  display: inline-block;
+  font-family: 'Roboto condensed';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 100%;
+  min-width: 120px;
+  padding: 20px 40px;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .tmh-button:active, .tmh-button:visited, .tmh-button:hover {
+    background: #242424;
+    transition: 0.2s background ease-out; }
+
+.tmh-content-wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%; }
+  .tmh-content-wrapper--wrapped {
+    flex-wrap: wrap; }
+  .tmh-content-wrapper h2,
+  .tmh-content-wrapper h4,
+  .tmh-content-wrapper p {
+    text-align: center;
+    width: 100%; }
+
+.tmh-section {
+  padding: 50px 0 65px; }
+  .tmh-section--dark-bg {
+    background: #383838; }
+    .tmh-section--dark-bg h2,
+    .tmh-section--dark-bg h3,
+    .tmh-section--dark-bg h4,
+    .tmh-section--dark-bg p {
+      color: #FFF; }
+
+.tmh-header {
+  background: #242424;
+  display: flex;
+  height: 70px;
+  justify-content: space-between; }
+  .tmh-header__logo {
+    font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    color: #FFF;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 23px 0 0 40px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    .tmh-header__logo:before {
+      background: url(../img/the-mindful-habit-logo.svg);
+      content: '';
+      display: inline-block;
+      height: 23px;
+      margin: 1px 5px 0 0;
+      vertical-align: top;
+      width: 22px; }
+    .tmh-header__logo span {
+      color: #F60000; }
+  .tmh-header__menu {
+    margin: 24px 40px 0 0; }
+    .tmh-header__menu li {
+      display: inline;
+      margin-left: 45px; }
+    .tmh-header__menu a {
+      font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-weight: normal;
+      color: #FFF;
+      font-size: 18px;
+      text-decoration: none; }
+      .tmh-header__menu a:hover {
+        text-decoration: underline; }
+
+.tmh-main-slide {
+  background: #F3F3F3;
+  height: 597px; }
+  .tmh-main-slide__book {
+    background: url("../img/workbook.png") -150px 0;
+    background-size: 860px 549px;
+    height: 550px;
+    margin-top: 40px;
+    width: 500px; }
+  .tmh-main-slide__text-box {
+    margin-top: 80px;
+    width: 700px; }
+    .tmh-main-slide__text-box h2 {
+      color: #F60000;
+      font-family: 'Roboto condensed';
+      font-weight: 700;
+      margin-bottom: 32px;
+      text-align: left;
+      text-transform: uppercase; }
+      .tmh-main-slide__text-box h2 span {
+        text-transform: none; }
+    .tmh-main-slide__text-box p {
+      color: #383838;
+      font-family: 'Roboto condensed';
+      font-size: 26px;
+      font-weight: 300;
+      margin-bottom: 55px;
+      text-align: left; }
+
+.tmh-client-reviews h2 {
+  margin-bottom: 80px;
+  text-align: center;
+  width: 100%; }
+
+.tmh-client-reviews__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1250px; }
+  .tmh-client-reviews__list__item {
+    background: #FFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 22.5%; }
+    .tmh-client-reviews__list__item h3 {
+      border-bottom: 1px solid #F3F3F3;
+      color: #F60000;
+      font-size: 24px;
+      line-height: 120%;
+      margin-bottom: 15px;
+      padding-bottom: 15px; }
+    .tmh-client-reviews__list__item p {
+      color: #383838;
+      font-size: 18px;
+      line-height: 140%;
+      text-align: left; }
+
+.tmh-who-is-it-for {
+  padding: 50px 0 65px; }
+  .tmh-who-is-it-for h2,
+  .tmh-who-is-it-for p {
+    color: #F60000;
+    margin-bottom: 30px; }
+  .tmh-who-is-it-for p,
+  .tmh-who-is-it-for ul {
+    color: #383838;
+    font-size: 18px;
+    list-style: disc; }
+  .tmh-who-is-it-for li {
+    line-height: 175%; }
+  .tmh-who-is-it-for__list-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%; }
+
+.tmh-what-is-it h2,
+.tmh-what-is-it h4 {
+  margin-bottom: 25px; }
+
+.tmh-what-is-it h4 {
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0 auto 30px;
+  max-width: 800px;
+  text-transform: none; }
+
+.tmh-what-is-it hr {
+  border: 0;
+  border-bottom: 1px solid #FFF;
+  margin: 0 calc((100% - 360px) / 2) 30px;
+  max-width: 360px;
+  width: 100%; }
+
+.tmh-what-is-it p {
+  font-size: 18px;
+  margin: 0 auto 30px;
+  max-width: 1000px; }
+
+.tmh-what-is-it__tiles-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.tmh-what-is-it__tile {
+  width: 30%; }
+  .tmh-what-is-it__tile h3 {
+    font-size: 24px; }
+  .tmh-what-is-it__tile p {
+    text-align: left; }
+  .tmh-what-is-it__tile img {
+    border: 5px solid #717171;
+    margin-bottom: 15px;
+    width: 100%; }
+
+.tmh-invitation__craig-rounded {
+  background: url("../img/craig-rounded.png") no-repeat center bottom;
+  border: 8px solid #D9D9D9;
+  border-radius: 100%;
+  display: inline-block;
+  height: 260px;
+  width: 260px; }
+
+.tmh-invitation__block-quote {
+  font-size: 18px;
+  margin-left: 70px;
+  padding-right: 40px;
+  max-width: 680px;
+  position: relative; }
+  .tmh-invitation__block-quote p {
+    margin-bottom: 35px;
+    text-align: left; }
+  .tmh-invitation__block-quote i {
+    display: block; }
+  .tmh-invitation__block-quote:after {
+    color: #D9D9D9;
+    content: '”';
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 208px;
+    font-weight: 700;
+    left: 101%;
+    position: absolute;
+    top: -50px; }
+
+.tmh-logos-stripe {
+  background: #000;
+  letter-spacing: 1px;
+  color: #FFF; }
+  .tmh-logos-stripe .tmh-content-wrapper {
+    height: 48px;
+    align-items: center; }
+  .tmh-logos-stripe span,
+  .tmh-logos-stripe img {
+    margin-right: 20px; }
+
+.tmh-craig-slide {
+  background: #E5E5E5;
+  padding-bottom: 0;
+  padding-top: 0; }
+  .tmh-craig-slide .tmh-content-wrapper {
+    align-items: flex-start;
+    justify-content: space-between; }
+  .tmh-craig-slide__pic-wrapper {
+    height: 365px;
+    margin-top: -35px;
+    overflow: hidden;
+    width: 570px; }
+  .tmh-craig-slide__text-wrapper h2 {
+    color: #F60000;
+    font-size: 50px;
+    margin-top: 30px; }
+  .tmh-craig-slide__text-wrapper h3 {
+    color: #535353;
+    font-size: 30px;
+    margin-bottom: 20px; }
+  .tmh-craig-slide__text-wrapper p {
+    color: #808080;
+    font-size: 30px;
+    text-align: left; }
+    .tmh-craig-slide__text-wrapper p.__author {
+      font-size: 18px;
+      font-style: italic;
+      margin-bottom: 20px; }
+
+.tmh-footer {
+  display: flex;
+  padding: 30px 40px;
+  justify-content: space-between; }
+  .tmh-footer__text-block {
+    text-align: right;
+    width: 70%; }
+  .tmh-footer h1 {
+    color: #FFF;
+    font-size: 26px;
+    margin-top: 7px;
+    vertical-align: middle; }
+    .tmh-footer h1 span {
+      color: #979797; }
+    .tmh-footer h1:before {
+      background: url(../img/the-mindful-habit-logo-grey.svg);
+      content: '';
+      display: inline-block;
+      height: 23px;
+      margin: -5px 5px 0 0;
+      vertical-align: middle;
+      width: 22px; }
+  .tmh-footer ul {
+    margin-bottom: 10px; }
+  .tmh-footer li {
+    display: inline-block;
+    margin-left: 40px; }
+    .tmh-footer li a {
+      color: #D9D9D9;
+      text-decoration: none; }
+      .tmh-footer li a:hover {
+        color: #FFF;
+        transition: color 0.2s ease-out; }
+  .tmh-footer p {
+    color: #979797; }
