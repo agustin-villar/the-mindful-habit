@@ -1,0 +1,43 @@
+.tmh-craig-slide {
+  background: $craig-slide-grey;
+  padding-bottom: 0;
+  padding-top: 0;
+
+  .tmh-content-wrapper {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__pic-wrapper {
+    height: 365px;
+    margin-top: -35px;
+    overflow: hidden;
+    width: 570px;
+  }
+
+  &__text-wrapper {
+    h2 {
+      color: $red;
+      font-size: 50px;
+      margin-top: 30px;
+    }
+
+    h3 {
+      color: $dark-grey;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: $medium-darker-grey;
+      font-size: 30px;
+      text-align: left;
+
+      &.__author {
+        font-size: 18px;
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

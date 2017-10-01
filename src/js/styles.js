@@ -10,3 +10,7 @@ import '../scss/components/_main-slide.scss';
 import '../scss/components/_reviews.scss';
 import '../scss/components/_who-is-it-for.scss';
 import '../scss/components/_what-is-it.scss';
+import '../scss/components/_invitation.scss';
+import '../scss/components/_logos-stripe.scss';
+import '../scss/components/_craig-slide.scss';
+import '../scss/components/_footer.scss';

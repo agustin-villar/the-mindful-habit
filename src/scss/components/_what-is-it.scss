@@ -29,6 +29,8 @@
   &__tiles-container {
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 
   &__tile {
@@ -40,6 +42,12 @@
 
     p {
       text-align: left;
+    }
+
+    img {
+      border: 5px solid $border-grey;
+      margin-bottom: 15px;
+      width: 100%;
     }
   }
 }

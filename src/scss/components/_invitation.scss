@@ -1,0 +1,39 @@
+.tmh-invitation {
+  &__craig-rounded {
+    background: url('../img/craig-rounded.png') no-repeat center bottom;
+    border: 8px solid $soft-grey;
+    border-radius: 100%;
+    display: inline-block;
+    height: 260px;
+    width: 260px;
+  }
+
+  &__block-quote {
+    font-size: 18px;
+    margin-left: 70px;
+    padding-right: 40px;
+    max-width: 680px;
+    position: relative;
+
+    p {
+      margin-bottom: 35px;
+      text-align: left;
+    }
+
+    i {
+      display: block;
+    }
+
+    &:after {
+      color: $soft-grey;
+      content: '”';
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 208px;
+      font-weight: 700;
+      left: 101%;
+      position: absolute;
+      top: -50px;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+.tmh-footer {
+  display: flex;
+  padding: 30px 40px;
+  justify-content: space-between;
+
+  &__text-block {
+    text-align: right;
+    width: 70%;
+  }
+
+  h1 {
+    color: $white;
+    font-size: 26px;
+    margin-top: 7px;
+    vertical-align: middle;
+
+    span {
+      color: $medium-grey;
+    }
+
+    &:before {
+      background: url(../img/the-mindful-habit-logo-grey.svg);
+      content: '';
+      display: inline-block;
+      height: 23px;
+      margin: -5px 5px 0 0;
+      vertical-align: middle;
+      width: 22px;
+    }
+  }
+
+  ul {
+    margin-bottom: 10px;
+  }
+
+  li {
+    display: inline-block;
+    margin-left: 40px;
+
+    a {
+      color: $soft-grey;
+      text-decoration: none;
+
+      &:hover {
+        color: $white;
+        transition: color 0.2s ease-out;
+      }
+    }
+  }
+
+  p {
+    color: $medium-grey;
+  }
+}

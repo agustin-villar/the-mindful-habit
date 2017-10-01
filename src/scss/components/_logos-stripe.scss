@@ -1,0 +1,15 @@
+.tmh-logos-stripe {
+  background: $black;
+  letter-spacing: 1px;
+  color: $white;
+
+  .tmh-content-wrapper {
+    height: 48px;
+    align-items: center;
+  }
+
+  span,
+  img {
+    margin-right: 20px;
+  }
+}
